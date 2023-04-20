@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.full-screen {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: white;
+    transition: background-color 0.3s;
+    z-index: 1000;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkblue;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.brand {
+    font-size: 1.4rem;
+    line-height: 1;
+    margin-right: 2rem;
+}
+
+.brand span {
+    display: block;
+}
+
+#main {
+    background-image: url('images/first.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#main h1 {
+    color: rgb(41, 39, 39);
+    font-size: 9rem;
+}
+
+#main h2 {
+    color: rgb(43, 43, 126);
+    font-size: 9rem;
+}
+
+#history {
+    background-image: url('images/second.png');
+    position: relative;
+}
+
+.history-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.history-header {
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.history-header h3,
+.history-header h4 {
+    color: darkblue;
+    margin: 0 rem;
+}
+
+.history-header h3 {
+    font-size: 4rem;
+    opacity: 0.5;
+}
+
+.history-header h4 {
+    font-size: 2rem;
+}
+
+#history p {
+    color: darkblue;
+    margin: 4rem 0;
+    text-align: center;
+}
+
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 139, 0.6);
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 17vh;
+    width: 100%;
+  }
+
+  .carousel img {
+    max-width: 25%;
+    margin: 0 0.5rem;
+    display: block;
+    max-height: 100%;
+    height: 100%;
+  }
+
+
+
+
+.carousel img.carousel-item:first-child {
+    display: block;
+}
+
+#climb {
+    position: relative;
+}
+
+.climb-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 1rem 0;
+    height: 25%;
+}
+
+.climb-content {
+    text-align: center;
+}
+
+.climb-header h3,
+.climb-header h4 {
+    color: blue;
+    margin: 0 1rem;
+}
+
+.climb-header h3 {
+    font-size: 4rem;
+}
+
+.climb-header h4 {
+    font-size: 2rem;
+}
+
+#climb p {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    background-color: darkblue;
+    padding: 0.5rem;
+}
+
+.mountain-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.mountain-btn.active {
+    color: white;
+}
+
+.mountain-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.mountain-img {
+    display: none;
+    max-width: 100%;
+    height: 75%;
+    margin: 0 1rem;
+    object-fit: cover;
+}
+
+.mountain-img.active {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: black;
+    color: white;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
