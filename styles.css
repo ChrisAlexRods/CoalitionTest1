@@ -72,24 +72,26 @@ nav a {
 #history {
     background-image: url('images/second.png');
     position: relative;
-}
+    padding-bottom: 4rem;
+  }
+
 
 .history-content {
-    display: grid; /* Change from flex to grid */
+    display: grid;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding-top: 2rem;
-    position: relative; /* Add this to make the container relative to its child elements */
+    position: relative;
 }
 
 .history-header {
     display: flex;
     align-items: center;
-    position: absolute; /* Change from static to absolute */
+    position: absolute;
     top: 0;
     left: 0;
-    padding-left: 35rem; /* Add some space from the left edge */
+    padding-left: 35rem;
 }
 .history-header h3,
 .history-header h4 {
@@ -109,8 +111,8 @@ nav a {
 #history p {
     color: #3f4d67;
     margin: 4rem 0;
-    text-align: justify; /* Change from center to justify for better alignment */
-    padding: 0 1rem; /* Add padding to the left and right of the paragraph */
+    text-align: justify;
+    padding: 0 1rem;
 }
 
 .carousel {
@@ -229,6 +231,36 @@ footer p {
 }
 
 .section-anchor {
-    margin-top: -3rem; /* Adjust the value based on the header height */
+    margin-top: -3rem;
     padding-top: 3rem; /* Keep the same value as margin-top */
+}
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .pagination-btn {
+    background: white;
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    margin-top: 25%;
+    cursor: pointer;
+    bottom: -100rem;
+  }
+
+  .pagination-btn.active {
+    background: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  }
+
+  .carousel-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

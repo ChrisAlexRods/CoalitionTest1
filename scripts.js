@@ -35,24 +35,32 @@ for (let i = 0; i < mountainButtons.length; i++) {
   mountainButtons[i].addEventListener("click", switchMountain);
 }
 
-// Carousel functionality
-let carouselImages = document.querySelectorAll(".carousel-item");
-let activeCarouselImageIndex = 0;
+const paginationBtns = document.querySelectorAll(".pagination-btn");
+const carouselItems = document.querySelectorAll(".carousel-item");
 
-function activateCarouselImage(imageIndex) {
-  for (let i = 0; i < carouselImages.length; i++) {
-    carouselImages[i].classList.remove("active");
-  }
-  carouselImages[imageIndex].classList.add("active");
-}
+paginationBtns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    const slide = e.target.dataset.slide;
 
-function cycleCarouselImages() {
-  activeCarouselImageIndex++;
-  if (activeCarouselImageIndex >= carouselImages.length) {
-    activeCarouselImageIndex = 0;
-  }
-  activateCarouselImage(activeCarouselImageIndex);
-}
+    paginationBtns.forEach((paginationBtn) => {
+      paginationBtn.classList.remove("active");
+    });
 
-// Set the interval for cycling carousel images every 3 seconds
-setInterval(cycleCarouselImages, 3000);
+    carouselItems.forEach((carouselItem) => {
+      carouselItem.style.display = "none";
+    });
+
+    e.target.classList.add("active");
+    if (slide === "1") {
+      carouselItems[0].style.display = "block";
+      carouselItems[1].style.display = "block";
+      carouselItems[2].style.display = "block";
+      carouselItems[3].style.display = "block";
+    } else {
+      carouselItems[1].style.display = "block";
+      carouselItems[0].style.display = "block";
+      carouselItems[3].style.display = "block";
+      carouselItems[2].style.display = "block";
+    }
+  });
+});
