@@ -35,7 +35,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: darkblue;
+    color: #3f4d67;
     font-size: 1.2rem;
     margin-left: 1rem;
 }
@@ -89,11 +89,11 @@ nav a {
     position: absolute; /* Change from static to absolute */
     top: 0;
     left: 0;
-    padding-left: 1rem; /* Add some space from the left edge */
+    padding-left: 35rem; /* Add some space from the left edge */
 }
 .history-header h3,
 .history-header h4 {
-    color: darkblue;
+    color: #3f4d67;
     margin: 0 rem;
 }
 
@@ -107,7 +107,7 @@ nav a {
 }
 
 #history p {
-    color: darkblue;
+    color: #3f4d67;
     margin: 4rem 0;
     text-align: justify; /* Change from center to justify for better alignment */
     padding: 0 1rem; /* Add padding to the left and right of the paragraph */
@@ -117,7 +117,7 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 139, 0.6);
+    background-color: #3f4d67;
     padding: 1rem 0;
     position: absolute;
     bottom: 0;
@@ -162,8 +162,9 @@ nav a {
 
 .climb-heading h3,
 .climb-heading h4 {
-    color: blue;
+    color: #3f4d67;
     margin: 0 0.5rem;
+    opacity: 0.5;
 }
 
 .climb-heading h3 {
@@ -182,7 +183,7 @@ nav a {
 .navigation {
     display: flex;
     justify-content: center;
-    background-color: darkblue;
+    background-color: #3f4d67;
     padding: 0.5rem;
 }
 
