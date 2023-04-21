@@ -34,3 +34,25 @@ function switchMountain(event) {
 for (let i = 0; i < mountainButtons.length; i++) {
   mountainButtons[i].addEventListener("click", switchMountain);
 }
+
+// Carousel functionality
+let carouselImages = document.querySelectorAll(".carousel-item");
+let activeCarouselImageIndex = 0;
+
+function activateCarouselImage(imageIndex) {
+  for (let i = 0; i < carouselImages.length; i++) {
+    carouselImages[i].classList.remove("active");
+  }
+  carouselImages[imageIndex].classList.add("active");
+}
+
+function cycleCarouselImages() {
+  activeCarouselImageIndex++;
+  if (activeCarouselImageIndex >= carouselImages.length) {
+    activeCarouselImageIndex = 0;
+  }
+  activateCarouselImage(activeCarouselImageIndex);
+}
+
+// Set the interval for cycling carousel images every 3 seconds
+setInterval(cycleCarouselImages, 3000);
