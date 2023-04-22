@@ -303,3 +303,13 @@ footer p {
   tr:nth-child(even) td {
     background-color: rgba(63, 77, 103, 0.1);
   }
+
+  nav i {
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: #3f4d67;
+  }
+
+  nav i:hover {
+    color: rgba(63, 77, 103, 0.7);
+  }
