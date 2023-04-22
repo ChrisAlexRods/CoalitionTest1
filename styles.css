@@ -100,7 +100,7 @@ nav a {
 }
 
 .history-header h3 {
-    font-size: 4rem;
+    font-size: 9rem;
     opacity: 0.5;
 }
 
@@ -110,7 +110,7 @@ nav a {
 
 #history p {
     color: #3f4d67;
-    margin: 4rem 0;
+    margin: 8rem 0;
     text-align: justify;
     padding: 0 1rem;
 }
@@ -164,17 +164,18 @@ nav a {
 
 .climb-heading h3,
 .climb-heading h4 {
-    color: #3f4d67;
     margin: 0 0.5rem;
-    opacity: 0.5;
 }
 
 .climb-heading h3 {
-    font-size: 4rem;
+    font-size: 9rem;
+    color: #3f4d67;
+    opacity: 0.5;
 }
 
 .climb-heading h4 {
     font-size: 2rem;
+    color: #3f4d67;
 }
 
 #climb p {
@@ -184,9 +185,10 @@ nav a {
 
 .navigation {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: #3f4d67;
     padding: 0.5rem;
+    padding-left: 12rem; /* Add left padding */
 }
 
 .mountain-btn {
@@ -196,6 +198,11 @@ nav a {
     font-size: 1.2rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
+}
+
+.mountain-btn:hover {
+    background-color: white;
+    color: #3f4d67;
 }
 
 .mountain-btn.active {
@@ -220,9 +227,11 @@ nav a {
 }
 
 footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #3f4d67;
     color: white;
 }
 
@@ -248,9 +257,9 @@ footer p {
     height: 10px;
     border-radius: 50%;
     margin: 0 5px;
-    margin-top: 25%;
+    margin-top: 18%;
     cursor: pointer;
-    bottom: -100rem;
+    bottom: -20rem;
   }
 
   .pagination-btn.active {
@@ -264,3 +273,33 @@ footer p {
   left: 0;
   right: 0;
 }
+
+.schedule-container {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    width: 18%;
+    border-radius: 5px;
+  }
+
+  .schedule-container h5 {
+    color: #3f4d67;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  td {
+    color: #3f4d67;
+    padding: 0.5rem 1rem;
+  }
+
+  tr:nth-child(even) td {
+    background-color: rgba(63, 77, 103, 0.1);
+  }
