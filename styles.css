@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 .full-screen {
@@ -51,7 +51,7 @@ nav a {
 }
 
 #main {
-    background-image: url('images/first.png');
+    background-image: url("images/first.png");
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,11 +70,10 @@ nav a {
 }
 
 #history {
-    background-image: url('images/second.png');
+    background-image: url("images/second.png");
     position: relative;
     padding-bottom: 4rem;
-  }
-
+}
 
 .history-content {
     display: grid;
@@ -93,6 +92,7 @@ nav a {
     left: 0;
     padding-left: 35rem;
 }
+
 .history-header h3,
 .history-header h4 {
     color: #3f4d67;
@@ -188,7 +188,8 @@ nav a {
     justify-content: flex-start;
     background-color: #3f4d67;
     padding: 0.5rem;
-    padding-left: 12rem; /* Add left padding */
+    padding-left: 12rem;
+    /* Add left padding */
 }
 
 .mountain-btn {
@@ -241,16 +242,17 @@ footer p {
 
 .section-anchor {
     margin-top: -3rem;
-    padding-top: 3rem; /* Keep the same value as margin-top */
+    padding-top: 3rem;
+    /* Keep the same value as margin-top */
 }
 
-  .pagination {
+.pagination {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-  }
+}
 
-  .pagination-btn {
+.pagination-btn {
     background: white;
     border: none;
     width: 10px;
@@ -260,18 +262,18 @@ footer p {
     margin-top: 18%;
     cursor: pointer;
     bottom: -20rem;
-  }
+}
 
-  .pagination-btn.active {
+.pagination-btn.active {
     background: white;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-  }
+}
 
-  .carousel-container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.carousel-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .schedule-container {
@@ -282,34 +284,34 @@ footer p {
     padding: 1rem;
     width: 18%;
     border-radius: 5px;
-  }
+}
 
-  .schedule-container h5 {
+.schedule-container h5 {
     color: #3f4d67;
     margin-bottom: 0.5rem;
-    font-size: 1.5rem
-  }
+    font-size: 1.5rem;
+}
 
-  table {
+table {
     width: 100%;
     border-collapse: collapse;
-  }
+}
 
-  td {
+td {
     color: #3f4d67;
     padding: 0.5rem 1rem;
-  }
+}
 
-  tr:nth-child(even) td {
+tr:nth-child(even) td {
     background-color: rgba(63, 77, 103, 0.1);
-  }
+}
 
-  nav i {
+nav i {
     font-size: 2rem;
     margin-left: 1rem;
     color: #3f4d67;
-  }
+}
 
-  nav i:hover {
+nav i:hover {
     color: rgba(63, 77, 103, 0.7);
-  }
+}
