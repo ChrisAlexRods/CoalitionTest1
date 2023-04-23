@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,12 +9,14 @@ body {
     font-family: "Bebas Neue", sans-serif;
 }
 
+/* Full Screen */
 .full-screen {
     height: 100vh;
     background-size: cover;
     background-position: center;
 }
 
+/* Header */
 #header {
     position: sticky;
     top: 0;
@@ -50,6 +53,7 @@ nav a {
     display: block;
 }
 
+/* Main */
 #main {
     background-image: url("images/first.png");
     display: flex;
@@ -69,6 +73,7 @@ nav a {
     font-size: 9rem;
 }
 
+/* History */
 #history {
     background-image: url("images/second.png");
     position: relative;
@@ -115,6 +120,7 @@ nav a {
     padding: 0 1rem;
 }
 
+/* Carousel */
 .carousel {
     display: flex;
     justify-content: center;
@@ -141,6 +147,7 @@ nav a {
     display: block;
 }
 
+/* Climb */
 #climb {
     position: relative;
 }
@@ -183,6 +190,7 @@ nav a {
     margin: 1rem 0;
 }
 
+/* Navigation */
 .navigation {
     display: flex;
     justify-content: flex-start;
@@ -210,6 +218,7 @@ nav a {
     color: white;
 }
 
+/* Mountain Images */
 .mountain-images {
     display: flex;
     justify-content: center;
@@ -227,6 +236,7 @@ nav a {
     display: block;
 }
 
+/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
@@ -240,12 +250,14 @@ footer p {
     margin-bottom: 0.5rem;
 }
 
+/* Section Anchor */
 .section-anchor {
     margin-top: -3rem;
     padding-top: 3rem;
     /* Keep the same value as margin-top */
 }
 
+/* Pagination */
 .pagination {
     display: flex;
     justify-content: center;
@@ -269,6 +281,7 @@ footer p {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
+/* Carousel Container */
 .carousel-container {
     position: absolute;
     bottom: 0;
@@ -276,6 +289,7 @@ footer p {
     right: 0;
 }
 
+/* Schedule Container */
 .schedule-container {
     position: absolute;
     top: 50%;
@@ -292,6 +306,7 @@ footer p {
     font-size: 1.5rem;
 }
 
+/* Table */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -306,6 +321,7 @@ tr:nth-child(even) td {
     background-color: rgba(63, 77, 103, 0.1);
 }
 
+/* Nav Icon */
 nav i {
     font-size: 2rem;
     margin-left: 1rem;
